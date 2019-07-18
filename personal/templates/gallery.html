@@ -1,0 +1,86 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- Page Preloder -->
+<div id="preloder">
+	<div class="loader"></div>
+</div>
+
+<!-- Top right elements -->
+<div class="spacial-controls">
+	<div class="search-switch"><img src="static/img/search-icon.png" alt=""></div>
+	<div class="nav-switch-warp">
+		<div class="nav-switch">
+			<div class="ns-bar"></div>
+		</div>
+	</div>
+</div>
+<!-- Top right elements end -->
+
+<div class="main-warp">
+
+	<!-- Page section -->
+	<div class="page-section gallery-page">
+		<ul class="portfolio-filter">
+			<li class="filter all active" data-filter="*">All</li>
+			<li class="filter" data-filter=".photo">Photography</li>
+			<li class="filter" data-filter=".nature">Nature</li>
+			<li class="filter" data-filter=".love">Love</li>
+			<li class="filter" data-filter=".animals">Animals</li>
+		</ul>
+		<div class="portfolio-gallery">
+			<div class="gallery-item animals">
+				<img src="static/img/gallery/1.jpg" alt="">
+				<div class="hover-links">
+					<a href="" class="site-btn sb-light">Next</a>
+				</div>
+			</div>
+			<div class="gallery-item nature">
+				<img src="static/img/gallery/2.jpg" alt="">
+				<div class="hover-links">
+					<a href="" class="site-btn sb-light">Next</a>
+				</div>
+			</div>
+			<div class="gallery-item love">
+				<img src="static/img/gallery/3.jpg" alt="">
+				<div class="hover-links">
+					<a href="" class="site-btn sb-light">Next</a>
+				</div>
+			</div>
+			<div class="gallery-item photo">
+				<img src="static/img/gallery/5.jpg" alt="">
+				<div class="hover-links">
+					<a href="" class="site-btn sb-light">Next</a>
+				</div>
+			</div>
+			<div class="gallery-item nature">
+				<img src="static/img/gallery/6.jpg" alt="">
+				<div class="hover-links">
+					<a href="" class="site-btn sb-light">Next</a>
+				</div>
+			</div>
+			<div class="gallery-item photo">
+				<img src="static/img/gallery/4.jpg" alt="">
+				<div class="hover-links">
+					<a href="" class="site-btn sb-light">Next</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Page section end-->
+</div>
+
+<!-- Search model -->
+<div class="search-model">
+	<i class="fas fa-search"></i>
+	<div class="h-100 d-flex align-items-center justify-content-center">
+		<div class="search-close-switch">x</div>
+		<form class="search-moderl-form">
+			<input type="text" id="search-input" placeholder="Search here.....">
+		</form>
+	</div>
+</div>
+
+
+
+{% endblock %}

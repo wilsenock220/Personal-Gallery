@@ -1,0 +1,74 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Top right elements -->
+<div class="spacial-controls">
+    <div class="search-switch"><img src="static/img/search-icon.png" alt=""></div>
+    <div class="nav-switch-warp">
+        <div class="nav-switch">
+            <div class="ns-bar"></div>
+        </div>
+    </div>
+</div>
+<!-- Top right elements end -->
+
+<div class="main-warp">
+    <!-- Page section -->
+    <div class="page-section home-page">
+        <div class="hero-slider owl-carousel">
+            <div class="slider-item d-flex align-items-center set-bg" data-setbg="static/img/slider-bg-1.jpg"
+                data-hash="slide-1">
+                <div class="si-text-box">
+                    <span class="container">Photography</span>
+                    <h2 class="container">Project No. 1</h2>
+                    <p class="container">Ut pellentesque auctor lorem, at maximus lacus faucibus nec. Interdum et
+                        malesuada fames ac ante
+                        ipsum primis in faucibus. Mauris auctor nunc non nulla euismod consequat. Pellentesque non
+                        mattis nulla. Fusce quis tempor risus, non elemen tum dui. Curabitur et mattis ex, a ultrices.
+                    </p>
+                    <a href="" class="site-btn">Read More</a>
+                </div>
+                <div class="next-slide-show set-bg" data-setbg="static/img/slider-bg-2.jpg">
+                    <a href="#slide-2" class="ns-btn">Next</a>
+                </div>
+            </div>
+            <div class="slider-item d-flex align-items-center set-bg" data-setbg="static/img/slider-bg-2.jpg"
+                data-hash="slide-2">
+                <div class="si-text-box">
+                    <span class="container">Photography</span>
+                    <h2 class="container">Project No. 2</h2>
+                    <p class="container">Ut pellentesque auctor lorem, at maximus lacus faucibus nec. Interdum et
+                        malesuada fames ac ante
+                        ipsum primis in faucibus. Mauris auctor nunc non nulla euismod consequat. Pellentesque non
+                        mattis nulla. Fusce quis tempor risus, non elemen tum dui. Curabitur et mattis ex, a ultrices.
+                    </p>
+                    <a href="" class="site-btn pl-3">Read More</a>
+                </div>
+                <div class="next-slide-show set-bg animated fadeIn slower" data-setbg="static/img/slider-bg-1.jpg">
+                    <a href="#slide-1" class="ns-btn">Next</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="snh-1"></div>
+    </div>
+    <!-- Page section end-->
+</div>
+
+<!-- Search model -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">x</div>
+        <form class="search-moderl-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search model end -->
+
+
+{% endblock %}
