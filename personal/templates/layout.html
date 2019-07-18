@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="zxx">
 
 <head>
-    <title>Photo Gallery HTML Template</title>
+    <title>Personal Gallery</title>
     <meta charset="UTF-8">
     <meta name="description" content="Photo Gallery HTML Template">
     <meta name="keywords" content="endGam,gGaming, magazine, html">
@@ -31,8 +32,10 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
+    {% include 'navbar.html' %}
+    {% block content %}
+    {%endblock%}
 
-  
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
