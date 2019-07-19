@@ -31,8 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'personal.apps.PersonalConfig',
-    'personal',
+    'personal.apps.PersonalConfig',
+    # 'personal',̣̣
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -83,13 +83,10 @@ if config('MODE')=="dev":
 #         default=config('DATABASE_URL')
 #     )
 # }
-# ​
-# db_from_env = dj_database_url.config(conn_max_age=500)
+# # db_from_env = dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(db_from_env)
-# ​
-# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
-# ​
-
+# # ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+# 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [

@@ -10,8 +10,8 @@ def index(request):
     return render(request,'index.html',locals())
 
 def gallery(request):
-    # images = Image.objects.all()
-    # categories = Category.objects.all()
+    images = Image.objects.all()
+    categories = Category.objects.all()
     return render(request,'gallery.html',locals())
 
 
