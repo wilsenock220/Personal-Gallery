@@ -148,6 +148,10 @@ ol {
 	background-repeat: no-repeat;
 	background-position: right 23px top 22px;
 }
+.hover-links{
+	display: flex;
+	flex-direction: column;
+}
 
 .site-btn:hover {
 	color: #323232;
