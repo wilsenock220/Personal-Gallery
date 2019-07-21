@@ -1,6 +1,7 @@
 {%extends 'layout.html'%}
 
 {% block content %}
+{% include "navbar.html" %}
 <!-- Top right elements -->
 <div class="spacial-controls">
     <div class="search-switch"><img src="static/img/search-icon.png" alt=""></div>
@@ -11,18 +12,30 @@
     </div>
 </div>
 <!-- Top right elements end -->
-<div class="container">
-    <div class="row">
+<div class="main-warp">
 
-        {% for image in images %}
+    <!-- Page section -->
+    <div class="page-section gallery-page">
 
-        <div class="grid col-lg-4">
-            <div class="grid-item">
-                <img class="card-img-top img-responsive pt-3" src="{{image.image.url}}" alt="Image">
+        <div class="portfolio-gallery">
+
+            {% for image in images %}
+            <div class="gallery-item">
+                <img src="{{image.image.url}}" alt="">
+                <div class="hover-links">
+                    <!-- <a href="" class="site-btn sb-light">Next</a> -->
+                    <p class="text-center"> <strong>Name : </strong>
+                        {{ image.Name }} </p>
+                    <hr>
+                    <p class="text-center"><strong>Location : </strong>
+                        {{image.location}} </p>
+                    <hr>
+                    <p class="text-center"><strong>Category : </strong>
+                        {{image.category}} </p>
+                </div>
             </div>
+            {% endfor %}
         </div>
-
-        {% endfor %}
     </div>
 </div>
 <!-- Search model -->
@@ -30,19 +43,12 @@
     <i class="fas fa-search"></i>
     <div class="h-100 d-flex align-items-center justify-content-center">
         <div class="search-close-switch">x</div>
-        <form class="search-moderl-form" role="search" action="{% url 'search_results' %}">
+        <form class="search-moderl-form">
             <input type="text" id="search-input" placeholder="Search here.....">
         </form>
     </div>
 </div>
 
-<!-- 
-<img class="card-img-top img-responsive col-xl-6 p-0" src="{{image.image.url}}" alt="Image">
-<h5 class="text-center card-header"> <strong>Name : </strong>
-    {{ image.Name }} </h5>
-<p class="text-center"><strong>Location : </strong>
-    {{image.location}} </p>
-<p class="text-center"><strong>Category : </strong>
-    {{image.category}} </p> -->
+
 
 {% endblock %}

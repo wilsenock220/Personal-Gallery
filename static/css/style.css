@@ -1629,37 +1629,3 @@ ol {
 		padding: 100px 15px 0;
 	}
 }
-
-* {
-	box-sizing: border-box;
-}
-
-.grid:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.grid-item--width2 {
-	width: 340px;
-}
-
-.grid-item--width3 {
-	width: 520px;
-}
-
-.grid-item--width4 {
-	width: 780px;
-}
-
-.grid-item--height2 {
-	height: 200px;
-}
-
-.grid-item--height3 {
-	height: 260px;
-}
-
-.grid-item--height4 {
-	height: 360px;
-}
