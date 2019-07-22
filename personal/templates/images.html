@@ -38,6 +38,10 @@
                     <hr>
                     <p class="text-center"><strong>Category : </strong>
                         {{image.category}} </p>
+                    <input class="form-control" type="text"
+                        value="https://gallery-flow.herokuapp.com{{image.image.url}}" id="{{image.id}}-url">
+                    <button class="btn btn-outline-info" onclick="copyToClipboard('{{image.id}}-url')">Copy Image
+                        Url</button>
                 </div>
             </div>
             {% endfor %}
