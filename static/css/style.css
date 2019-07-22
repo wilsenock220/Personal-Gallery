@@ -5,12 +5,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-#white{
+
+#white {
 	color: white;
 }
-.hide{
-	display: none;
-}
+
 
 h1,
 h2,
@@ -138,7 +137,8 @@ ol {
 	background-repeat: no-repeat;
 	background-position: right 23px top 22px;
 }
-.hover-links{
+
+.hover-links {
 	display: flex;
 	flex-direction: column;
 }
