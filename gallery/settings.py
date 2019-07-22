@@ -5,13 +5,8 @@ from decouple import config, Csv
 MODE = config('MODE', default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = '6(d1m=h9ydgwk63amqc+emgngy)yvh!3r*mn3l-f9n&h9(swk='
-# SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 ALLOWED_HOSTS = []
 # Application definition
