@@ -15,9 +15,8 @@
 <!-- Top right elements end -->
 <div class="main-warp">
     <ul class="list-inline">
-        <li class="list-inline-item">Locations</li>
         {% for location in location %}
-        <li class="list-inline-item"><a href="/location/{{location.id}}">{{location}}</a></li>
+        <h3 class="list-inline-item text-dark"><a href="/location/{{location.id}}">{{location}}</a></h3>
         {% endfor %}
     </ul>
     <!-- Page section -->
@@ -38,7 +37,7 @@
                         {{image.category}} </p>
                     <input class="form-control hide" type="text"
                         value="https://wilst-gallery.herokuapp.com{{image.image.url}}" id="{{image.id}}-url">
-                    <button class="btn btn-sm btn-outline-bleu-grey" onclick="copyToClipboard('{{image.id}}-url')">Copy
+                    <button id="white" class="btn btn-sm btn-outline-bleu-grey" onclick="copyToClipboard('{{image.id}}-url')">Copy
                         Image
                         Url</button>
                 </div>

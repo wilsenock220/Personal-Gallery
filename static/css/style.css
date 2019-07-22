@@ -1,17 +1,3 @@
-/* =================================
-------------------------------------
-  Photo Gallery HTML Template
-  Version: 1.0
- ------------------------------------
- ====================================*/
-
-
-
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-
 html,
 body {
 	height: 100%;
@@ -19,7 +5,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-
+#white{
+	color: white;
+}
 .hide{
 	display: none;
 }
