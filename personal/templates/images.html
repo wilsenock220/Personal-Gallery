@@ -30,15 +30,16 @@
                 <img src="{{image.image.url}}" alt="">
                 <div class="hover-links animated flipInY">
                     <!-- <a href="" class="site-btn sb-light">Next</a> -->
-                    <p class="text-center"> <strong>Name : </strong>
+                    <p class="text-center"><i class="fas fa-file-signature"></i>
                         {{ image.Name }} </p>
-                    <p class="text-center"><strong>Location : </strong>
+                    <p class="text-center"><i class="fas fa-map-marker-alt"></i>
                         {{image.location}} </p>
-                    <p class="text-center"><strong>Category : </strong>
+                    <p class="text-center"><i class="far fa-object-group"></i>
                         {{image.category}} </p>
                     <input class="form-control hide" type="text"
                         value="https://wilst-gallery.herokuapp.com{{image.image.url}}" id="{{image.id}}-url">
-                    <button class="btn btn-sm btn-outline-danger" onclick="copyToClipboard('{{image.id}}-url')">Copy Image
+                    <button class="btn btn-sm btn-outline-bleu-grey" onclick="copyToClipboard('{{image.id}}-url')">Copy
+                        Image
                         Url</button>
                 </div>
             </div>
