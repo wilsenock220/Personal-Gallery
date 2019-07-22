@@ -11,9 +11,15 @@
         </div>
     </div>
 </div>
+
 <!-- Top right elements end -->
 <div class="main-warp">
-
+    <ul class="list-inline">
+        <li class="list-inline-item">Locations</li>
+        {% for location in location %}
+        <li class="list-inline-item"><a href="/location/{{location.id}}">{{location}}</a></li>
+        {% endfor %}
+    </ul>
     <!-- Page section -->
     <div class="page-section gallery-page">
 
@@ -43,7 +49,7 @@
     <i class="fas fa-search"></i>
     <div class="h-100 d-flex align-items-center justify-content-center">
         <div class="search-close-switch">x</div>
-        <form class="search-moderl-form">
+        <form class="search-moderl-form" action="{% url 'search_results' %}">
             <input type="text" id="search-input" placeholder="Search here.....">
         </form>
     </div>

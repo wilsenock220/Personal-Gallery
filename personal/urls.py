@@ -6,7 +6,9 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^gallery$', views.gallery, name='gallery'),
-    url(r'^search/', views.search_results, name='search_results')
+    url(r'^search/', views.search_results, name='search_results'),
+    url(r'^location/(?P<location>\d+)',
+        views.search_by_location, name='location_filter'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,

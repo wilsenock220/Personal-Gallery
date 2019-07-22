@@ -1,32 +1,35 @@
-
+{% extends 'layout.html' %}
+{% block content %}
 
 
 <header class="header-section">
-        <div class="header-close">
-            <i class="fa fa-times"></i>
-        </div>
-        <div class="header-warp">
-            <a href="" class="site-logo">
-                <img src="static/img/logo.png" alt="">
-            </a>
-            <img src="static/img/menu-icon.png" alt="" class="menu-icon">
-            <ul class="main-menu">
-                <li class="active animated fadeInRight"><a href="{% url 'index' %}">Home</a></li>
-                <li class="animated fadeInRight delay-1s"><a href="{% url 'gallery' %}">Gallery</a></li>
-                <li class="animated fadeInRight delay-2s"><a href="./gallery-single.html">Single gallery</a></li>
-                <li class="animated fadeInRight delay-3s"><a href="./blog.html">Blog</a></li>
-                <li class="animated fadeInRight delay-4s"><a href="./contact.html">Contact</a></li>
-            </ul>
-            <div class="social-links-warp">
-                <div class="social-links">
-                    <a href=""><i class="fab fa-behance-square animated fadeInUp"></i></a>
-                    <a href=""><i class="fab fa-dribbble-square animated fadeInUp delay-1s"></i></a>
-                    <a href=""><i class="fab fa-twitter-square animated fadeInUp delay-2s"></i></a>
-                    <a href=""><i class="fab fa-facebook-square animated fadeInUp delay-3s"></i></a>
-                    <a href=""><i class="fab fa-pinterest-square animated fadeInUp delay-4s"></i></a>
-                </div>
-                <div class="social-text">Find us on</div>
+    <div class="header-close">
+        <i class="fa fa-times"></i>
+    </div>
+    <div class="header-warp">
+        <a href="" class="site-logo">
+            <img src="static/img/logo.png" alt="">
+        </a>
+        <img src="static/img/menu-icon.png" alt="" class="menu-icon">
+        <ul class="main-menu">
+            <li class="active animated fadeInRight"><a href="{% url 'index' %}">Home</a></li>
+            <li class="animated fadeInRight delay-1s"><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li class="animated fadeInRight delay-2s"><a href="./gallery-single.html">Single gallery</a></li>
+          
+            <li class="animated fadeInRight delay-4s"><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="social-links-warp">
+            <div class="social-links">
+                <a href=""><i class="fab fa-behance-square animated fadeInUp"></i></a>
+                <a href=""><i class="fab fa-dribbble-square animated fadeInUp delay-1s"></i></a>
+                <a href=""><i class="fab fa-twitter-square animated fadeInUp delay-2s"></i></a>
+                <a href=""><i class="fab fa-facebook-square animated fadeInUp delay-3s"></i></a>
+                <a href=""><i class="fab fa-pinterest-square animated fadeInUp delay-4s"></i></a>
             </div>
+            <div class="social-text">Find us on</div>
         </div>
-        <div class="copyright">Colorlib 2018 @ All rights reserved</div>
-    </header>
+    </div>
+    <div class="copyright">Colorlib 2018 @ All rights reserved</div>
+</header>
+
+{% endblock %}

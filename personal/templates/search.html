@@ -1,0 +1,41 @@
+{% extends 'layout.html'%}
+{% block content %}
+
+
+
+
+<div class="container text-center">
+  {% if images %}
+  <h5>Found {{ images|length }} of search term {{message}}</h5>
+  {% else %}
+  <h5> Found 0 images for the search term {{message}}</h5>
+  {% endif %}
+</div>
+<div class="main-warp">
+
+  <!-- Page section -->
+  <div class="page-section gallery-page">
+
+    <div class="portfolio-gallery">
+
+      {% for image in images %}
+      <div class="gallery-item">
+        <img id="img{{image.id}}" src="{{image.image.url}}" data-target="#{{image.id}}" alt="">
+        <div class="hover-links animated flipInY">
+          <!-- <a href="" class="site-btn sb-light">Next</a> -->
+          <p class="text-center"> <strong>Name : </strong>
+            {{ image.Name }} </p>
+          <hr>
+          <p class="text-center"><strong>Location : </strong>
+            {{image.location}} </p>
+          <hr>
+          <p class="text-center"><strong>Category : </strong>
+            {{image.category}} </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
