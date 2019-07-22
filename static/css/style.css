@@ -20,7 +20,9 @@ body {
 	font-smoothing: antialiased;
 }
 
-
+.hide{
+	display: none;
+}
 
 h1,
 h2,
